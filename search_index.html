@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism Search - Find Homestays & Locations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Find Your Next Homestay or Adventure 🌍</h1>
+            <p>Discover amazing homestays and explore nearby attractions</p>
+        </header>
+
+        <div class="search-section">
+            <form method="POST" action="search.php" class="search-form">
+                <div class="input-group">
+                    <input type="text" name="search_city" placeholder="Enter city name (e.g., Goa, Delhi)" required>
+                    <button type="submit">Search</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="results_container" class="results-container">
+            <!-- Search results will be displayed here -->
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Tourism Search Platform - Discover Local Experiences</p>
+    </footer>
+</body>
+</html>

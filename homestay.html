@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Homestay Details - Local Tourism</title>
+<link rel="stylesheet" href="tourism.css">
+</head>
+<body>
+<nav id="nav">
+<div class="logo">TourStay</div>
+<div class="nav-links">
+<a href="index.html">Home</a>
+<a href="homestay.html">Homestays</a>
+<a href="host.html">Host</a>
+<a href="guide.html">Guide</a>
+</div>
+</nav>
+
+<div class="listing">
+<h2>Mountain View Heritage Stay</h2>
+<div class="rating">★★★★☆ (4.5/5)</div>
+<p>Experience authentic mountain culture with local family hosts</p>
+
+<div class="details">
+<h3>Nearby Attractions</h3>
+<ul>
+<li>Ancient Temple - 2km walk</li>
+<li>Waterfall Trek - 5km hike</li>
+<li>Village Market - 1km</li>
+<li>Heritage Museum - 3km</li>
+<li>Scenic Viewpoint - 4km</li>
+</ul>
+</div>
+
+<div class="map">
+📍 Map Placeholder - Local Area
+<p>Showing local attractions and trek routes</p>
+</div>
+
+<div class="booking">
+<h3>Booking Details</h3>
+<p>Rate: ₹1,500 per night</p>
+<p>Includes: Meals, Local Guide, Cultural Activities</p>
+<button onclick="bookStay()">Book Heritage Stay Now</button>
+</div>
+</div>
+
+<script>
+window.onload = function() {
+const query = localStorage.getItem('searchQuery');
+if(query) {
+document.querySelector('h2').textContent = `${query} Heritage Stay`;
+}
+}
+
+function bookStay() {
+alert('Heritage Stay booking confirmed! You will receive local guide contact details.');
+}
+</script>
+</body>
+</html>

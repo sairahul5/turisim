@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Local Guide Portal - Tourism Curation</title>
+<link rel="stylesheet" href="tourism.css">
+</head>
+<body>
+<nav id="nav">
+<div class="logo">TourStay</div>
+<div class="nav-links">
+<a href="index.html">Home</a>
+<a href="homestay.html">Homestays</a>
+<a href="host.html">Host</a>
+<a href="guide.html">Guide</a>
+</div>
+</nav>
+
+<div class="guide-portal">
+<h2>Local Guide Portal</h2>
+<p>Curate and submit local tourism experiences</p>
+
+<form onsubmit="submitGuideInfo(event)">
+<h3>Submit New Local Trek Guide</h3>
+<input type="text" placeholder="Trek Name" required>
+<textarea placeholder="Route Description and Difficulty Level" required></textarea>
+<input type="text" placeholder="Duration (hours)" required>
+
+<h3>Verify Heritage Site Details</h3>
+<input type="text" placeholder="Heritage Site Name" required>
+<textarea placeholder="Historical Significance" required></textarea>
+<input type="text" placeholder="Best Visit Time" required>
+
+<h3>Local Experience Submission</h3>
+<input type="text" placeholder="Experience Title" required>
+<textarea placeholder="Cultural Activity Description" required></textarea>
+
+<button type="submit">Submit Guide Information</button>
+</form>
+
+<div class="pending">
+<h3>Pending Verifications</h3>
+<p>• Sunset Point Trek - Under Review</p>
+<p>• Ancient Fort Details - Approved</p>
+<p>• Village Pottery Workshop - Under Review</p>
+</div>
+</div>
+
+<script>
+function submitGuideInfo(event) {
+event.preventDefault();
+alert('Tourism guide information submitted for verification!');
+document.querySelector('form').reset();
+}
+</script>
+</body>
+</html>

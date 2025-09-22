@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Local Homestays & Tourism - Home</title>
+<link rel="stylesheet" href="tourism.css">
+</head>
+<body>
+<nav id="nav">
+<div class="logo">TourStay</div>
+<div class="nav-links">
+<a href="index.html">Home</a>
+<a href="homestay.html">Homestays</a>
+<a href="host.html">Host</a>
+<a href="guide.html">Guide</a>
+</div>
+</nav>
+
+<div class="hero">
+<h1>Explore Heritage Stays</h1>
+<p>Discover authentic local experiences</p>
+<div class="search">
+<input type="text" placeholder="Search for a Temple or Trek" id="searchInput">
+<button onclick="searchLocation()">Search</button>
+</div>
+</div>
+
+<div class="features">
+<div class="feature">
+<h3>Adventure Zones Near You</h3>
+<p>Mountain treks and heritage trails</p>
+</div>
+<div class="feature">
+<h3>Cultural Homestays</h3>
+<p>Stay with local families</p>
+</div>
+<div class="feature">
+<h3>Local Experiences</h3>
+<p>Authentic cultural immersion</p>
+</div>
+</div>
+
+<script>
+function searchLocation() {
+const query = document.getElementById('searchInput').value;
+if(query) {
+localStorage.setItem('searchQuery', query);
+window.location.href = 'homestay.html';
+}
+}
+</script>
+</body>
+</html>

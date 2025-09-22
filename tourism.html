@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Local Homestays & Tourism</title>
+<link rel="stylesheet" href="tourism.css">
+</head>
+<body>
+<nav id="nav">
+<div class="logo">Come Tour</div>
+<div class="nav-links">
+<a href="#" onclick="showPage('home')">Home</a>
+<a href="#" onclick="showPage('detail')">Homestays</a>
+<a href="#" onclick="showPage('host')">Host</a>
+<a href="#" onclick="showPage('guide')">Guide</a>
+</div>
+</nav>
+
+<div id="home" class="page active">
+<div class="hero">
+<h1>Explore Heritage Stays</h1>
+<p>Discover authentic local experiences</p>
+<div class="search">
+<input type="text" placeholder="Search for a Temple or Trek" id="searchInput">
+<button onclick="searchLocation()">Search</button>
+</div>
+</div>
+<div class="features">
+<div class="feature">
+<h3>Adventure Zones Near You</h3>
+<p>Mountain treks and heritage trails</p>
+</div>
+<div class="feature">
+<h3>Cultural Homestays</h3>
+<p>Stay with local families</p>
+</div>
+</div>
+</div>
+
+<div id="detail" class="page">
+<div class="listing">
+<h2>Mountain View Heritage Stay</h2>
+<div class="rating">★★★★☆ (4.5/5)</div>
+<div class="details">
+<h3>Nearby Attractions</h3>
+<ul>
+<li>Ancient Temple - 2km</li>
+<li>Waterfall Trek - 5km</li>
+<li>Village Market - 1km</li>
+</ul>
+</div>
+<div class="map">📍 Map Placeholder - Local Area</div>
+<button onclick="bookStay()">Book Now</button>
+</div>
+</div>
+
+<div id="host" class="page">
+<div class="dashboard">
+<h2>Host Tourism Dashboard</h2>
+<div class="stats">
+<div class="stat">
+<h3>Occupancy Rate</h3>
+<p>85%</p>
+</div>
+<div class="stat">
+<h3>Guest Feedback on Local Experience</h3>
+<p>4.7/5</p>
+</div>
+</div>
+<div class="actions">
+<button>Update Local Attractions</button>
+<button>Manage Bookings</button>
+</div>
+</div>
+</div>
+
+<div id="guide" class="page">
+<div class="guide-portal">
+<h2>Local Guide Portal</h2>
+<form>
+<h3>Submit New Local Trek Guide</h3>
+<input type="text" placeholder="Trek Name">
+<textarea placeholder="Route Description"></textarea>
+<h3>Verify Heritage Site Details</h3>
+<input type="text" placeholder="Site Name">
+<button type="submit">Submit Guide Info</button>
+</form>
+</div>
+</div>
+
+<script>
+function showPage(pageId) {
+document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+document.getElementById(pageId).classList.add('active');
+}
+
+function searchLocation() {
+const query = document.getElementById('searchInput').value;
+alert(`Searching for: ${query}`);
+showPage('detail');
+}
+
+function bookStay() {
+alert('Heritage Stay booking confirmed!');
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: Arial, sans-serif;
+background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+min-height: 100vh;
+color: white;
+padding-bottom: 2rem;
+}
+
+#nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1rem 2rem;
+background: rgba(255,255,255,0.1);
+backdrop-filter: blur(10px);
+margin-bottom: 2rem;
+}
+
+.logo {
+font-size: 1.5rem;
+font-weight: bold;
+}
+
+.nav-links a {
+color: white;
+text-decoration: none;
+margin: 0 1rem;
+padding: 0.5rem 1rem;
+border-radius: 20px;
+transition: background 0.3s;
+}
+
+.nav-links a:hover {
+background: rgba(255,255,255,0.2);
+}
+
+.page {
+display: none;
+padding: 2rem;
+}
+
+.page.active {
+display: block;
+}
+
+.hero {
+text-align: center;
+padding: 3rem 0;
+}
+
+.hero h1 {
+font-size: 3rem;
+margin-bottom: 1rem;
+}
+
+.search {
+margin: 2rem 0;
+display: flex;
+justify-content: center;
+gap: 1rem;
+}
+
+.search input {
+padding: 1rem;
+border: none;
+border-radius: 25px;
+width: 300px;
+background: rgba(255,255,255,0.9);
+color: #333;
+}
+
+.search button {
+padding: 1rem 2rem;
+border: none;
+border-radius: 25px;
+background: #ff6b6b;
+color: white;
+cursor: pointer;
+}
+
+.features {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 2rem;
+margin: 2rem 0;
+}
+
+.feature {
+background: rgba(255,255,255,0.1);
+padding: 2rem;
+border-radius: 15px;
+text-align: center;
+}
+
+.listing {
+max-width: 800px;
+margin: 0 auto;
+background: rgba(255,255,255,0.1);
+padding: 2rem;
+border-radius: 15px;
+}
+
+.booking {
+background: rgba(255,255,255,0.1);
+padding: 1.5rem;
+border-radius: 10px;
+margin-top: 2rem;
+text-align: center;
+}
+
+.booking button {
+background: #ff6b6b;
+color: white;
+border: none;
+padding: 1rem 2rem;
+border-radius: 25px;
+font-size: 1.1rem;
+cursor: pointer;
+margin-top: 1rem;
+}
+
+.rating {
+font-size: 1.2rem;
+margin: 1rem 0;
+}
+
+.details ul {
+list-style: none;
+margin: 1rem 0;
+}
+
+.details li {
+padding: 0.5rem 0;
+border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.map {
+background: rgba(255,255,255,0.2);
+padding: 2rem;
+text-align: center;
+margin: 1rem 0;
+border-radius: 10px;
+}
+
+.dashboard {
+max-width: 800px;
+margin: 0 auto;
+}
+
+.stats {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 2rem;
+margin: 2rem 0;
+}
+
+.stat {
+background: rgba(255,255,255,0.1);
+padding: 2rem;
+border-radius: 15px;
+text-align: center;
+}
+
+.actions {
+text-align: center;
+margin: 2rem 0;
+}
+
+.actions button {
+margin: 0 1rem;
+padding: 1rem 2rem;
+border: none;
+border-radius: 25px;
+background: #4ecdc4;
+color: white;
+cursor: pointer;
+}
+
+.guide-portal {
+max-width: 800px;
+margin: 0 auto;
+}
+
+.pending {
+background: rgba(255,255,255,0.1);
+padding: 1.5rem;
+border-radius: 15px;
+margin-top: 2rem;
+}
+
+.recent {
+background: rgba(255,255,255,0.1);
+padding: 1.5rem;
+border-radius: 15px;
+margin-top: 2rem;
+}
+
+.guide-portal form {
+background: rgba(255,255,255,0.1);
+padding: 2rem;
+border-radius: 15px;
+}
+
+.guide-portal input,
+.guide-portal textarea {
+width: 100%;
+padding: 1rem;
+margin: 0.5rem 0;
+border: none;
+border-radius: 10px;
+background: rgba(255,255,255,0.9);
+color: #333;
+}
+
+.guide-portal button {
+width: 100%;
+padding: 1rem;
+border: none;
+border-radius: 25px;
+background: #45b7d1;
+color: white;
+cursor: pointer;
+margin-top: 1rem;
+}
+
+button:hover {
+opacity: 0.8;
+transform: translateY(-2px);
+transition: all 0.3s;
+}
